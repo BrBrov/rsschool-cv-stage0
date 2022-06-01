@@ -1,6 +1,11 @@
 body {
   margin: 0;
 }
+
+.font{
+    font-family: 'Franklin Gothic Medium', sans-serif;
+}
+
 .container {
   position: absolute;
   width: 100%;
