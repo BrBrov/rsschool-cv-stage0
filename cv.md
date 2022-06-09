@@ -1,5 +1,5 @@
 
-![My photo](/Photo.png)
+![My photo](./assets/png/Photo.png)
 # **Henadzi** **Vasukovich**
 ******
 ## Contact information
