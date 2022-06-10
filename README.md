@@ -1,3 +1,2 @@
-# RSschool-cv
-### Henadzi Vasukovich
-[My Git](https://github.com/BrBrov/rsschool-cv.git)
+[https://brbrov.github.io/rsschool-cv/](https://brbrov.github.io/rsschool-cv/)
+[https://brbrov.github.io/rsschool-cv/cv](https://brbrov.github.io/rsschool-cv/cv)
