@@ -1,49 +1,631 @@
+/* Fonts */
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("/assets/fonts/OpenSans-Light.woff2") format("woff2"),
+  url("/assets/fonts/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans LightItalic";
+  src: url("/assets/fonts/OpenSans-LightItalic.woff2") format("woff2"),
+  url("/assets/fonts/OpenSans-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url("/assets/fonts/OpenSans-Regular.woff2") format("woff2"),
+  url("/assets/fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans Italic";
+  src: url("/assets/fonts/OpenSans-Italic.woff2") format("woff2"),
+  url("/assets/fonts/OpenSans-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Open Sans Medium";
+  src: url("/assets/fonts/OpenSans-Medium.woff2") format("woff2"),
+  url("/assets/fonts/OpenSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans MediumItalic";
+  src: url("/assets/fonts/OpenSans-MediumItalic.woff2") format("woff2"),
+  url("/assets/fonts/OpenSans-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Open Sans SemiBold";
+  src: url("/assets/fonts/OpenSans-SemiBold.woff2") format("woff2"),
+  url("/assets/fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans SemiBoldItalic";
+  src: url("/assets/fonts/OpenSans-SemiBoldItalic.woff2") format("woff2"),
+  url("/assets/fonts/OpenSans-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("/assets/fonts/OpenSans-Bold.woff2") format("woff2"),
+  url("/assets/fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans BoldItalic";
+  src: url("/assets/fonts/OpenSans-BoldItalic.woff2") format("woff2"),
+  url("/assets/fonts/OpenSans-BoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Open Sans ExtraBold";
+  src: url("/assets/fonts/OpenSans-ExtraBold.woff2") format("woff2"),
+  url("/assets/fonts/OpenSans-ExtraBold.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans ExtraBoldItalic";
+  src: url("/assets/fonts/OpenSans-ExtraBoldItalic.woff2") format("woff2"),
+  url("/assets/fonts/OpenSans-ExtraBoldItalic.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* Background color for section*/
+.black {
+  background-color: #222130;
+}
+.yellow {
+  background-color: #fecb00;
+}
+
+/* Links styles */
+a {
+  text-decoration: none;
+  color: rgb(10, 22, 129);
+}
+a:hover {
+  color: rgb(127, 15, 233);
+  text-decoration: underline;
+  text-decoration-style:solid;
+  text-decoration-color: #393d03;
+  text-shadow: 4px -3px 6px rgb(66, 82, 219);
+
+}
+
+/* Page */
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
 }
-
-.font {
-  font-family: "Franklin Gothic Medium", sans-serif;
-  font-size: 30pt;
-}
-
 .container {
-  position: fixed;
   width: 100%;
-  height: 100%;
-  background: rgb(71, 60, 230);
-  background: linear-gradient(
-    132deg,
-    rgb(71, 60, 230) 30%,
-    rgb(133, 140, 250) 64%
-  );
 }
 .page {
-  position: relative;
-  width: 40%;
-  height: 40%;
-  margin: 10% 0% 0% 30%;
-  padding: 7% 5% 0% 5%;
-  border-top-left-radius: 90px;
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 90px;
-  border-bottom-left-radius: 40px;
-  background: rgb(239, 207, 241);
-  background: linear-gradient(
-    221deg,
-    rgb(239, 207, 241) 15%,
-    rgb(133, 140, 250) 86%
-  );
+  width: 1440px;
+  height: 2020px;
+  margin: 0 auto;
 }
-.text-h1 {
-  position: relative;
+header {
+  height: 4%;
+}
+main {
+  height: 91%;
+}
+footer {
+  height: 5%;
+}
+
+/* Navigation */
+.menu {
+  margin-top: 2%;
+}
+.nav-list {
+  list-style: none;
+  font-size: 0;
   text-align: center;
 }
-.text-h2 {
-  position: relative;
+.nav-link {
+  display: inline-block;
+  font-family: "Open Sans Regular", sans-serif;
+  font-size: 16pt;
+  font-weight: 500;
+  border-left: 5px groove black;
+  padding-left: 1%;
+  margin: 0 2% 0 2%;
+}
+
+/* Main sections */
+.contact-details {
+  width: 100%;
+  height: 10%;
+  font-size: 0;
+}
+.my-info {
+  width: 100%;
+  height: 28%;
+  font-size: 0;
+}
+.about {
+  width: 100%;
+  height: 62%;
+  font-size: 0;
+}
+
+/* Left empty subsection */
+.empty {
+  display: inline-block;
+  width: 6%;
+  height: 100%;
+}
+
+/* Subsection with info*/
+.left-section {
+  display: inline-block;
+  width: 38%;
+  height: 100%;
+}
+.right-section {
+  display: inline-block;
+  width: 56%;
+  height: 100%;
+}
+
+/* footer blocks */
+.git {
+  float: left;
+  width: 7%;
+  height: 100%;
+}
+.year-of-production {
+  float: left;
+  width: 86%;
+  height: 100%;
   text-align: center;
 }
-.text-h3 {
-  position: relative;
+.logo-RS {
+  float: left;
+  width: 7%;
+  height: 100%;
+}
+
+/* Contact details */
+.tag-img {
+  display: block;
+  float: left;
+  width: 5%;
+  margin: 9% 0 0 16%;
+}
+.area {
+  float: left;
+  margin: 8% 0 0 6%;
+  font-family: "Open Sans SemiBold", sans-serif;
+  font-size: 2rem;
+  /*font-style: normal;*/
+  font-weight: 500;
+}
+.contacts-data {
+  display: block;
+}
+.contacts-list {
+  font-size: 0;
+  list-style: none;
   text-align: center;
+}
+.contacts-link {
+  float: left;
+  text-align: left;
+  margin: 8% 6% 0 0;
+  font-family: "Open Sans Medium", sans-serif;
+  font-size: 1.1rem;
+}
+
+/* Subsection of my info */
+.my-info .right-section {
+  overflow: hidden;
+}
+.my-info .left-section {
+  background-color: #e0b300;
+}
+.my-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.my-name {
+  margin: 8% 0 0 9%;
+  font-family: "Open Sans Bold", sans-serif;
+  font-size: 4rem;
+  color: white;
+}
+.line {
+  width: 48%;
+  height: 1%;
+  background-color: #fecb00;
+  margin: 3% 0 0 8%;
+}
+.profession {
+  margin: 8% 0 0 9%;
+  font-family: "Open Sans Bold", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* Subsection about */
+.about .left-section {
+  overflow: hidden;
+}
+.title-about {
+  margin: 5% 0 4% 7%;
+  font-size: 2.2rem;
+  font-family: "Open Sans Bold", sans-serif;
+}
+.data-about {
+  margin: 5% 5% 0 7%;
+  font-size: 1.5rem;
+  font-family: "Open Sans Light", sans-serif;
+  line-height: 1.7rem;
+}
+.education {
+  overflow: hidden;
+}
+.education h2 {
+  margin-left: 7%;
+  font-size: 2.2rem;
+  font-family: "Open Sans Bold", sans-serif;
+}
+.education ul > li {
+  margin: 3% 5% 0 0;
+  font-size: 1.5rem;
+  font-family: "Open Sans Regular", sans-serif;
+  line-height: 1.7rem;
+}
+.line-about {
+  display: block;
+  clear: right;
+  margin-left: 7%;
+  width: 99%;
+  height: 3%;
+  padding: 2%;
+  background-color: #dfb225;
+}
+.about .right-section {
+  overflow: hidden;
+}
+.line-about-right {
+  display: block;
+  margin-top: 1%;
+  clear: right;
+  width: 100%;
+  padding: 1.5%;
+  background-color: #e1e1e1;
+}
+.skills {
+  width: 90%;
+  margin-left: 8%;
+}
+.my-skills {
+  font-family: "Open Sans Bold", sans-serif;
+  font-size: 2rem;
+}
+.my-skills ul > li {
+  list-style: square;
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.code {
+  margin-left: 8%;
+  font-family: "Open Sans SemiBold", sans-serif;
+}
+.code-title {
+  font-size: 2rem;
+  font-family: "Open Sans Regular", sans-serif;
+  line-height: 4rem;
+}
+.code-title cite {
+  font-family: "Open Sans LightItalic", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.code-data {
+  font-size: 1rem;
+  font-weight: 100;
+  font-style: oblique;
+}
+.project-link {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 200;
+  line-height: 3rem;
+}
+.language {
+  margin-left: 8%;
+  font-family: "Open Sans Bold", serif;
+}
+.language-title {
+  font-size: 2rem;
+}
+.diagrams {
+  margin-top: 5%;
+  width: 100%;
+  height: 30%;
+  font-size: 0.1rem;
+}
+.block-diagram {
+  display: inline-block;
+  margin-left: 5%;
+  margin-right: 25%;
+  text-align: center;
+}
+.diagram {
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  width: 150pt;
+  height: 150pt;
+  margin: 1%;
+  text-align: center;
+  border-radius: 50%;
+}
+.inner {
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 120pt;
+  height: 120pt;
+  margin: auto;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+}
+.percent-english {
+  background: conic-gradient(from 90deg at 33%, white 67%, #22222d 90%);
+}
+.percent-native {
+  background: #22222d;
+}
+.language-level {
+  margin-top: 25%;
+  font-family: "Open Sans SemiBold", sans-serif;
+  font-size: 20pt;
+}
+
+/* Footer */
+.img-git-profile {
+  width: 50%;
+  margin: 30% 35%;
+}
+.year {
+  font-family: "Open Sans SemiBold", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-style: oblique;
+}
+.year br{
+  display: none;
+}
+.img-rsschool {
+  width: 100%;
+  margin: 50% auto;
+}
+
+/*adaptive for tablet*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Left empty subsection */
+  .empty {
+    display: none;
+  }
+
+  /* Subsection with info*/
+  .right-section{
+    width: 62%;
+  }
+}
+
+/*adaptive for smartphone*/
+@media only screen and (min-width : 320px) and (max-width : 768px){
+  .container {
+    width: 100vw;
+  }
+  .page {
+    width: 99vw;
+    height: auto;
+    margin: 0 auto;
+  }
+  header {
+    height: auto;
+  }
+  main {
+    height: auto;
+  }
+  footer {
+    height: auto;
+  }
+
+  /* Navigation */
+  .menu {
+    margin-top: 2%;
+  }
+  .nav-list {
+    list-style: none;
+    font-size: 0;
+    text-align: center;
+  }
+  .nav-link {
+    display: list-item;
+    border-left: 0;
+    padding-left: 0;
+    margin: 0 auto;
+  }
+
+  /* Main sections */
+  .contact-details {
+    height: auto;
+  }
+  .contacts-link{
+    font-size: 1.5rem;
+  }
+  .my-info {
+    height: auto;
+  }
+  .about {
+    height: auto;
+  }
+
+  /* Left empty subsection */
+  .empty {
+    display: none;
+  }
+
+  /* Subsection with info*/
+  .left-section {
+    display: block;
+    position: relative;
+    overflow: visible;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .right-section {
+    display: block;
+    position: relative;
+    overflow: visible;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* footer blocks */
+  .git {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+  .year-of-production {
+    float: none;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .logo-RS {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Contact details */
+  .tag-img {
+    clear: right;
+    width: 5%;
+    margin: 5% auto auto 17%;
+  }
+  .area {
+    float: none;
+    margin: 5% auto auto 32%;
+    font-size: 2.2rem;
+  }
+  .contacts-data {
+    display: block;
+    margin: 0 auto;
+  }
+  .contacts-link {
+    float: none;
+    text-align: center;
+    margin: auto;
+    font-size: 1.5rem;
+  }
+
+  /* Subsection of my info */
+  .my-photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .my-name {
+    margin: 0 0 0 9%;
+  }
+  .line {
+    width: 90%;
+    height: 4px;
+    background-color: #fecb00;
+    margin: 3% 0 0 8%;
+  }
+  .profession {
+    margin: 3% 0 0 9%;
+    font-size: 1.7rem;
+  }
+
+  /* Subsection about */
+
+  .line-about {
+    display: block;
+    clear: right;
+    margin-left: 7%;
+    width: 88%;
+    height: 3px;
+    padding: 2%;
+    background-color: #dfb225;
+  }
+  .code-title cite {
+    font-size: 1.2rem;
+  }
+  .code-data {
+    font-size: 1.3rem;
+    margin-left: 0;
+  }
+  .block-diagram {
+    display: block;
+    margin-left: 5%;
+    margin-right: 25%;
+    text-align: center;
+  }
+  .diagram {
+    position: relative;
+    width: 50pt;
+    height: 50pt;
+  }
+  .inner {
+    width: 2rem;
+    height: 2rem;
+    margin: auto;
+  }
+  .language-level {
+    margin: 5% 0 0 200%;
+    font-size: 15pt;
+  }
+
+  /*!* Footer *!*/
+  .img-git-profile {
+    display: block;
+    width: 20%;
+    margin: 15% auto;
+  }
+  .year br{
+    display: inline;
+  }
+  .img-rsschool {
+    display: block;
+    width: 50%;
+    margin: 10% auto;
+  }
 }
