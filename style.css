@@ -432,6 +432,9 @@ footer {
   font-weight: 700;
   font-style: oblique;
 }
+.year br{
+  display: none;
+}
 .img-rsschool {
   width: 100%;
   margin: 50% auto;
@@ -543,12 +546,13 @@ footer {
 
   /* Contact details */
   .tag-img {
+    clear: right;
     width: 5%;
-    margin: 5% 0 0 10%;
+    margin: 5% auto auto 17%;
   }
   .area {
     float: none;
-    margin: 5% 0 0 20%;
+    margin: 5% auto auto 32%;
     font-size: 2.2rem;
   }
   .contacts-data {
@@ -630,5 +634,8 @@ footer {
     display: block;
     width: 50%;
     margin: 10% auto;
+  }
+  .year br{
+    display: inline;
   }
 }
