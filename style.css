@@ -628,14 +628,15 @@ footer {
   /*!* Footer *!*/
   .img-git-profile {
     display: block;
+    width: 20%;
     margin: 15% auto;
+  }
+  .year br{
+    display: inline;
   }
   .img-rsschool {
     display: block;
     width: 50%;
     margin: 10% auto;
-  }
-  .year br{
-    display: inline;
   }
 }
