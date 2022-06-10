@@ -84,17 +84,6 @@
   font-style: italic;
 }
 
-/* Debug components style */
-.bg {
-  border: 1px groove chartreuse;
-}
-.br {
-  border: 1px groove rgb(250, 77, 9);
-}
-.by {
-  border: 1px groove rgb(249, 253, 1);
-}
-
 /* Background color for section*/
 .black {
   background-color: #222130;
