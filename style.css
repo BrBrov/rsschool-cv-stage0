@@ -445,10 +445,8 @@ footer {
   }
 
   /* Subsection with info*/
-  .left-section {
-    display: inline-block;
-    width: 44%;
-    height: 100%;
+  .right-section{
+    width: 62%;
   }
 }
 
