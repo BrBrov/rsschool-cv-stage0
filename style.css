@@ -1,49 +1,71 @@
+/* Debug components style */
+.bg {
+  border: 1px groove chartreuse;
+}
+.br {
+  border: 1px groove rgb(250, 77, 9);
+}
+.by {
+  border: 1px groove rgb(249, 253, 1);
+}
+
+/* Page */
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
 }
-
-.font {
-  font-family: "Franklin Gothic Medium", sans-serif;
-  font-size: 30pt;
-}
-
 .container {
-  position: fixed;
   width: 100%;
-  height: 100%;
-  background: rgb(71, 60, 230);
-  background: linear-gradient(
-    132deg,
-    rgb(71, 60, 230) 30%,
-    rgb(133, 140, 250) 64%
-  );
 }
 .page {
-  position: relative;
-  width: 40%;
-  height: 40%;
-  margin: 10% 0% 0% 30%;
-  padding: 7% 5% 0% 5%;
-  border-top-left-radius: 90px;
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 90px;
-  border-bottom-left-radius: 40px;
-  background: rgb(239, 207, 241);
-  background: linear-gradient(
-    221deg,
-    rgb(239, 207, 241) 15%,
-    rgb(133, 140, 250) 86%
-  );
+  width: 1440px;
+  height: 2020px;
+  margin: 0 auto;
 }
-.text-h1 {
-  position: relative;
-  text-align: center;
+header {
+  height: 4%;
 }
-.text-h2 {
-  position: relative;
-  text-align: center;
+main {
+  height: 91%;
 }
-.text-h3 {
-  position: relative;
-  text-align: center;
+footer {
+  height: 5%;
+}
+
+/* Main sections */
+.contact-details {
+  width: 100%;
+  height: 10%;
+  font-size: 0;
+}
+.my-info {
+  width: 100%;
+  height: 28%;
+  font-size: 0;
+}
+.about {
+  width: 100%;
+  height: 62%;
+  font-size: 0;
+}
+
+/* Left empty subsection */
+.empty {
+  display: inline-block;
+  width: 6%;
+  height: 100%;
+}
+
+/* Subsection with info*/
+.left-section {
+  display: inline-block;
+  width: 38%;
+  height: 100%;
+}
+.right-section {
+  display: inline-block;
+  width: 56%;
+  height: 100%;
 }
